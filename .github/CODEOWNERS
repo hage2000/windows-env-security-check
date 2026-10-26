@@ -1,0 +1,15 @@
+# 分支保护配套：任何改动都需要 @hage2000 审核
+# Branch protection companion: every change requires review from @hage2000
+#
+# 语法 / Syntax: https://docs.github.com/github/working-with-github-codeowners
+
+*                       @hage2000
+
+# 关键文件单列，确保不会被误改 / Critical files pinned explicitly
+/README.md              @hage2000
+/README.en.md           @hage2000
+/LICENSE                @hage2000
+/DISCLAIMER.md          @hage2000
+/SECURITY.md            @hage2000
+/CONTRIBUTING.md        @hage2000
+/.github/               @hage2000

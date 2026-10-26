@@ -1,0 +1,134 @@
+Windows Environment Security Check (Windows 环境安全检测)
+Free for Personal Use · Non-Commercial · All Rights Reserved
+
+Copyright (c) 2026 hage2000. All rights reserved.
+
+────────────────────────────────────────────────────────────
+中文
+────────────────────────────────────────────────────────────
+
+本软件及其附带的文档、截图与构建产物（以下合称"本作品"）由作者完全原创
+设计与实现，非转载、非改造他人软件。本作品以「保留所有权利」方式公开发布：
+公开仓库仅用于透明化、缺陷报告与社区协作改进，不构成任何形式的著作权转让。
+
+一、授予你的权利（永久免费、非商业）
+
+  1. 在你拥有全部所有权、且不含任何单位统一管控代理的个人设备上，免费
+     下载、安装、运行本作品，用于个人隐私与安全自查；
+  2. 查看、fork 本仓库，并依据 CONTRIBUTING.md 提交 Pull Request；
+  3. 在注明出处与原仓库链接的前提下，引用本作品的部分文档内容用于评论、
+     评测或教学。
+
+  本作品永久免费，作者不会对其收费，也不会推出任何付费版本；本作品永远
+  不具有任何盈利目的。
+
+二、禁止的行为（未经作者事先书面许可）
+
+  1. 在组织配发的设备、接入单位网络的设备或任何受单位统一管理的设备上
+     使用本作品；
+  2. 利用本作品规避、破坏、对抗任何单位依法依规部署的安全管控、审计、
+     监控或数据保护措施；
+  3. 售卖、转售、租赁、捆绑销售本作品，将其作为付费服务、付费课程或
+     付费社群的一部分，或以本作品直接或间接获利；
+  4. 再分发本作品或其任何修改版本（无论是否收费）；
+  5. 修改、改名、去除署名后重新发布，或以本作品为基础发布衍生作品；
+  6. 移除或修改本文件、README 与 DISCLAIMER 中的声明条款。
+
+三、原创声明
+
+  本作品的程序名称、界面、检测逻辑与处置逻辑均为作者独立开发成果，不包含
+  任何第三方的破解、破解补丁、注册机或未经授权的代码。本作品不提供任何
+  木马、病毒、蠕虫、勒索软件、键盘记录器、窃密程序或后门的生成、制作、
+  投放与传播功能，不提供针对他人设备的入侵、控制或数据获取能力，不包含
+  任何违反中华人民共和国法律法规的功能。
+
+四、贡献
+
+  你提交的 Pull Request 一经合入，即表示你授予作者一项永久、全球范围、
+  免版税、不可撤销的许可，允许作者以任何方式使用、修改、再许可及分发你的
+  贡献，并同意你的贡献以本文件相同条款对外提供。
+
+五、免责
+
+  本作品按"现状"提供，不附带任何明示或暗示的担保，包括但不限于对适销性、
+  特定用途适用性和不侵权的担保。因下载、安装、使用或误用本作品（包括对
+  本作品二次修改后的使用）产生的任何直接或间接损失——数据丢失、系统损坏、
+  业务中断、合规风险、劳动争议或法律责任——均由使用者自行承担，作者不承担
+  任何责任。
+
+  本作品为检测与可回滚处置工具：检测阶段只读；处置阶段仅在用户明确确认后
+  修改本机配置。其输出不构成任何形式的安全认证、合规证明或法律意见。
+
+────────────────────────────────────────────────────────────
+English
+────────────────────────────────────────────────────────────
+
+This software, together with its documentation, screenshots and build artifacts
+(the "Work"), is entirely original work by the author — not a repost, not a
+modification or repackaging of anyone else's software. It is published on an
+"All Rights Reserved" basis: the public repository exists for transparency,
+defect reporting and community collaboration, and grants no transfer of
+copyright.
+
+1. RIGHTS GRANTED (FREE FOREVER, NON-COMMERCIAL)
+
+   You may:
+   (a) download, install and run the Work free of charge on a personal device
+       that you own outright and that carries no organisation-managed agent,
+       for your own privacy and security self-checks;
+   (b) view and fork this repository, and submit Pull Requests as described in
+       CONTRIBUTING.md;
+   (c) quote portions of the documentation, with attribution and a link to the
+       original repository, for review, commentary or teaching.
+
+   The Work is free forever. The author will not charge for it, will not offer
+   any paid edition, and it will never pursue any commercial purpose.
+
+2. PROHIBITED (WITHOUT PRIOR WRITTEN PERMISSION)
+
+   You may not:
+   (a) use the Work on equipment issued by an organisation, on devices
+       connected to an organisation's network, or on any device subject to
+       organisational management;
+   (b) use the Work to circumvent, disable or defeat security controls,
+       auditing, monitoring or data-protection measures lawfully deployed by
+       any organisation;
+   (c) sell, resell, rent or bundle the Work, make it part of a paid service,
+       course or community, or otherwise monetise it directly or indirectly;
+   (d) redistribute the Work or any modified version, paid or free;
+   (e) modify, rename or de-attribute the Work and republish it, or publish
+       derivative works based on it;
+   (f) remove or alter the terms in this file, the README or DISCLAIMER.
+
+3. ORIGINAL WORK
+
+   The program name, interface, detection logic and remediation logic are the
+   author's independent work. The Work contains no cracks, patches, keygens or
+   unauthorised third-party code, and provides no capability to generate,
+   build, drop or distribute trojans, viruses, worms, ransomware, keyloggers,
+   stealers or backdoors, no ability to intrude on or control another person's
+   device, and no function that violates the laws of the People's Republic of
+   China.
+
+4. CONTRIBUTIONS
+
+   By having a Pull Request merged you grant the author a perpetual, worldwide,
+   royalty-free, irrevocable licence to use, modify, sublicense and distribute
+   your contribution in any manner, and you agree that your contribution is
+   provided to third parties under the same terms as this file.
+
+5. DISCLAIMER
+
+   THE WORK IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+   AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM
+   DOWNLOADING, INSTALLING, USING OR MISUSING THE WORK (INCLUDING USE OF A
+   MODIFIED BUILD) — INCLUDING DATA LOSS, SYSTEM DAMAGE, BUSINESS
+   INTERRUPTION, COMPLIANCE RISK, EMPLOYMENT DISPUTES OR LEGAL LIABILITY — ALL
+   OF WHICH ARE BORNE ENTIRELY BY THE USER.
+
+   The Work is a detection and reversible-remediation tool: detection is
+   read-only, and remediation modifies local configuration only after explicit
+   user confirmation. Its output is not a security certification, compliance
+   attestation or legal advice of any kind.

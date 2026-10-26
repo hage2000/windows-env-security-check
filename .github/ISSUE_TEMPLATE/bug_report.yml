@@ -1,0 +1,89 @@
+name: 缺陷 / 误报报告 · Bug report
+description: 程序崩溃、界面异常、结果不符合预期 / crash, UI glitch or unexpected result
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > 提交前请确认：你使用的是**最新 Release** 版本，且附件中的截图已打码个人信息。
+        > 漏洞类问题请勿在此提交，请按 [SECURITY.md](../blob/main/SECURITY.md) 私下报告。
+        >
+        > Please make sure you are on the **latest release** and that screenshots are redacted.
+        > Security issues must follow [SECURITY.md](../blob/main/SECURITY.md) instead.
+
+  - type: input
+    id: version
+    attributes:
+      label: 程序版本 / Version
+      placeholder: "1.4.0（EXE 属性 → 详细信息，或文件名）"
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: 系统与权限 / OS & privilege
+      placeholder: "Windows 11 23H2 x64 / 普通用户 或 管理员"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: 问题类别 / Area
+      options:
+        - 漏报（该报的没报）/ false negative
+        - 误报（不该报的报了）/ false positive
+        - 界面与交互 / UI & interaction
+        - 托盘与退出 / tray & exit
+        - 实时监测 / live monitoring
+        - 报告导出 / report export
+        - 性能与资源占用 / performance
+        - 其他 / other
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望结果 / Expected
+      placeholder: "例如：应命中「钉钉远程协助」/ e.g. should have flagged DingTalk remote assist"
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际结果 / Actual
+      placeholder: "例如：表格显示绿色「未检测到」/ e.g. green 'not detected'"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤 / Steps to reproduce
+      placeholder: |
+        1. 双击运行 exe
+        2. 按 F5
+        3. 观察第 3 行
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 证据 / Evidence
+      description: 截图、导出的报告片段、进程名与服务名（请打码用户名与完整路径）
+      placeholder: "拖入图片，或粘贴 导出报告 中去除个人信息后的片段"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: 确认 / Confirmation
+      options:
+        - label: 我已确认使用最新版本，且上述内容不含个人敏感信息
+          required: true

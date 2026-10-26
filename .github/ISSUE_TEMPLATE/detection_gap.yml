@@ -1,0 +1,78 @@
+name: 漏报反馈 · Detection gap
+description: 有一款加密/监控/远控软件没有被识别 / a monitoring, encryption or remote-control product was not detected
+title: "[detect] "
+labels: ["detection"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        帮助我们把特征库补齐。请尽量提供**可复现的证据点**：进程名、服务名、驱动名、安装注册表路径、自启动项、计划任务、根证书 CN、监听端口。
+        缺少证据的反馈我们可能无法处理，但欢迎先把已知信息贴上来讨论。
+
+        Help us extend the signature library. Provide reproducible evidence points: process name, service name, driver name, uninstall registry path, autorun entry, scheduled task, root CA CN, listening port.
+
+  - type: input
+    id: product
+    attributes:
+      label: 软件名称与厂商 / Product & vendor
+      placeholder: "天锐绿盾 / TianRui Lvdun — 深圳市天锐软件"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: 类别 / Category
+      options:
+        - 透明加密 / DLP / transparent encryption
+        - 磁盘加密 / disk encryption
+        - 远程控制 / remote control
+        - 键盘记录 / keylogger
+        - 屏幕或员工监控 / screen or employee monitoring
+        - 终端管控 / EDR / endpoint management
+        - 抓包 / 流量监听 / packet capture
+        - 代理 / HTTPS 中间人 / proxy or MITM
+        - 行为审计 / audit hooks
+        - 其他 / other
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 证据点 / Evidence points
+      placeholder: |
+        进程：LvdunAgent.exe（路径 ...\EsafeNet\...）
+        服务：LvdunSvc / 驱动：FileLock64.sys
+        安装记录：HKCU\...\Uninstall\Lvdun
+        计划任务：LvdunUpdate
+        根证书 CN：DO_NOT_TRUST_XXX
+        监听端口：5938
+      render: text
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: 该软件版本 / Product version
+      placeholder: "5.3.2"
+    validations:
+      required: false
+
+  - type: textarea
+    id: scanresult
+    attributes:
+      label: 本程序的扫描结果 / Scan result
+      description: 命中项数量与相关行；若为绿色「未检测到」请说明
+      placeholder: "count=2，仅命中火绒；未出现该软件任何一行"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 隐私 / Privacy
+      options:
+        - label: 我已移除用户名、完整路径、主机名等个人信息
+          required: true

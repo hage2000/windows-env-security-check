@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 安全问题私下报告 / Report a security issue privately
+    url: https://github.com/hage2000/windows-env-security-check/security/advisories/new
+    about: 涉及联网、写入、提权、结果伪造等问题的，请不要开公开 Issue / do not file a public issue for network, write, escalation or forged-result findings
+  - name: 使用说明与常见问题 / Manual & FAQ
+    url: https://github.com/hage2000/windows-env-security-check/blob/main/%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.txt
+    about: 托盘退不出、SmartScreen 提示、权限受限等问题请先看这里 / tray, SmartScreen and privilege questions are answered here
+  - name: 下载最新版本 / Download the latest release
+    url: https://github.com/hage2000/windows-env-security-check/releases/latest
+    about: 使用旧版本时请先升级再反馈 / please upgrade before reporting

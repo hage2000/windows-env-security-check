@@ -1,0 +1,32 @@
+# ── 二进制不进入仓库，通过 Releases 分发 ─────────────────────
+# Binaries are distributed via Releases, never tracked here
+*.exe
+*.dll
+*.pdb
+*.msi
+*.zip
+*.7z
+*.rar
+
+# 本地构建输出 / local build output
+bin/
+obj/
+dist/
+publish/
+artifacts/
+
+# 编辑器与系统 / editors & OS
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# 临时文件 / temp
+*.tmp
+*.log
+*.bak
+~$*
